@@ -8,23 +8,31 @@
 
 #ifndef BigNum_h
 #define BigNum_h
+#include <vector>
 
 namespace BigNum
 {
 	class MyBigNum
 	{
+		// Parce the string into an int vector
+		std::vector <int> parsedNum(std::string numString);
+		
 	public:
+		
 		// Returns a + b
-		static double Add(double a, double b);
+		static double Add(std::string a, std::string b);
 		
 		// Returns a - b
-		static double Subtract(double a, double b);
+		static double Subtract(std::string a, std::string b);
 		
 		// Returns a * b
-		static double Multiply(double a, double b);
+		static double Multiply(std::string a, std::string b);
 		
 		// Returns a / b
-		static double Divide(double a, double b);
+		static double Divide(std::string a, std::string b);
+		
+		// returns a % b
+		std::string Modulo(std::string a, std::string b);
 
 	};
 }
