@@ -13,6 +13,11 @@
 #include <vector>
 #include <iostream>
 
+#include <algorithm>
+#include <sstream>
+#include <iterator>
+
+
 namespace BigNum
 {
 	// This should be private
